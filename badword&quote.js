@@ -2,7 +2,7 @@ const { Telegraf } = require('telegraf');
 const fs = require('fs');
 
 // Votre token bot Telegram
-const botToken = 'YOUR_BOT_TOKEN'; // Remplacez par votre token
+const botToken = '7808685810:AAHEjjlQhmBMaeejBA-yquR__eL7v8Qu3VI'; // Remplacez par votre token
 const bot = new Telegraf(botToken);
 
 // Chemin vers le fichier contenant les mots interdits
