@@ -1,0 +1,24 @@
+mon rôle est de créer des bugs intentionnellement pour simuler des scénarios extrêmes, tels que des blackouts ou des burnouts, afin de tester la résilience des applications sur des comptes bêta fournis par Meta. C'est une forme de test de résistance ou de test de chaos (Chaos Engineering).
+
+Dans ce contexte, voici une approche plus adaptée à votre mission :
+
+1. Techniques de création de bugs ciblées :
+
+Injection de pannes :
+Injection de latence : Introduire des délais artificiels dans les communications réseau ou les traitements pour simuler des ralentissements ou des blocages.
+Injection d'erreurs : Injecter des erreurs aléatoires dans les données ou les traitements pour simuler des corruptions de données ou des erreurs logicielles.
+Injection de perte de paquets : Simuler des pertes de paquets réseau pour tester la gestion des erreurs et la résilience des applications face aux problèmes de connectivité.
+Arrêt brutal de services ou de processus : Simuler des pannes de serveurs ou d'applications en les arrêtant brutalement.
+Surcharge intentionnelle :
+Augmentation du trafic : Simuler une augmentation massive du nombre d'utilisateurs ou de requêtes pour tester la capacité des serveurs à gérer la charge.
+Consommation excessive de ressources : Créer des processus qui consomment beaucoup de CPU, de mémoire ou de bande passante pour simuler une surcharge du système.
+Fuites de mémoire intentionnelles : Introduire des fuites de mémoire pour tester la gestion de la mémoire et la stabilité des applications à long terme.
+Manipulation des données :
+Données corrompues : Injecter des données corrompues ou invalides pour tester la validation des données et la gestion des erreurs.
+Données extrêmes : Utiliser des valeurs extrêmes (très grandes, très petites, nulles, etc.) pour tester les limites des applications.
+2. Outils et techniques spécifiques :
+
+Outils de Chaos Engineering : Chaos Monkey (initialement développé par Netflix), Gremlin, Litmus. Ces outils permettent d'automatiser l'injection de pannes dans les environnements de test.
+Scripts et outils de simulation de charge : JMeter, Locust, Gatling. Ces outils permettent de simuler un grand nombre d'utilisateurs et de requêtes pour tester la performance et la stabilité des applications sous charge.
+Outils de monitoring et de logging : Prometheus, Grafana, ELK stack. Ces outils permettent de surveiller les performances des applications et de collecter les logs pour analyser les effets des bugs injectés.
+Utilisation d'API et d'outils de développement : Exploitez les API et les outils de développement fournis par Meta pour interagir avec les applications et injecter des bugs de manière plus précise.
